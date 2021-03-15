@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bento</title>
+    <link rel=" shortcut icon" type="image/png" href="icons/favicon.png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body class="">
+    <button id="themeButton">
+      <i id="themeButton__icon" data-feather="moon"></i>
+    </button>
+    <div class="container">
+      <!-- Clock and Greetings  -->
+
+      <div class="timeBlock">
+        <div class="clock">
+          <div id="hour" class=""></div>
+          <div id="separator" class=""></div>
+          <div id="minutes" class=""></div>
+        </div>
+        <div id="greetings" class=""></div>
+      </div>
+
+      <!-- Date and Weather  -->
+
+      <div class="weatherBlock">
+        <div class="weatherBlock__date">
+          <div id="month" class=""></div>
+          <div id="day" class=""></div>
+        </div>
+        <div class="weatherBlock__weather">
+          <div class="weather-icon">
+            <img src="icons/OneDark/unknown.png" />
+          </div>
+          <div class="temperature-value">
+            <p class="">- °<span class="g">c</span></p>
+          </div>
+          <div class="temperature-description">
+            <p class=""></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttons Links  -->
+
+      <div class="buttonLink">
+        <a
+          target="blank"
+          href="https://www.youtube.com/"
+          class="buttonLink__link card buttonLink__link-6"
+        >
+          <i class="buttonLink__icon" data-feather="youtube"></i>
+        </a>
+        <a
+          href="https://github.com/"
+          target="blank"
+          class="buttonLink__link card buttonLink__link-1"
+        >
+          <i class="buttonLink__icon" data-feather="github"></i>
+        </a>
+        <a
+          target="blank"
+          href="https://gitlab.com/"
+          class="buttonLink__link card buttonLink__link-2"
+        >
+          <i class="buttonLink__icon" data-feather="gitlab"></i>
+        </a>
+        <a
+          target="blank"
+          href="https://myanimelist.net/"
+          class="buttonLink__link card buttonLink__link-3"
+        >
+          <i class="buttonLink__icon" data-feather="book-open"></i>
+        </a>
+        <a
+          target="blank"
+          href="https://www.crunchyroll.com/"
+          class="buttonLink__link card buttonLink__link-4"
+        >
+          <i class="buttonLink__icon" data-feather="play"></i>
+        </a>
+        <a
+          href="https://notion.so"
+          target="blank"
+          class="buttonLink__link card buttonLink__link-5"
+        >
+          <i class="buttonLink__icon" data-feather="trello"></i>
+        </a>
+      </div>
+
+      <!-- Lists  -->
+
+      <div class="card list list__1">
+        <i class="list__head" data-feather="play-circle"></i>
+        <a
+          target="blank"
+          href="https://listen.tidal.com/"
+          class="list__link"
+          >Tidal</a
+        >
+        <a
+          target="blank"
+          href="https://jkanime.net"
+          class="list__link"
+          >Jkanime</a
+        >
+        <a
+          target="blank"
+          href="https://amigoscode.com/"
+          class="list__link"
+          >Amigoscode</a
+        >
+        <a
+          target="blank"
+          href="https://www.youtube.com/feed/storefront?bp=kgEmCGQSIlBMSFBUeFR4dEMwaWJWWnJUMl9XS1dVbDJTQXhzS3VLd3iiBQIoBQ%3D%3D"
+          class="list__link"
+          >Youtube Movies</a
+        >
+      </div>
+
+      <div class="card list list__2">
+        <i class="list__head" data-feather="at-sign"></i>
+        <a href="https://www.reddit.com/" target="blank" class="list__link"
+          >Reddit</a
+        >
+        <a href="https://www.dubox.com/" target="blank" class="list__link"
+          >Dubox</a
+        >
+        <a href="https://www.udemy.com/" target="blank" class="list__link"
+          >Udemy</a
+        >
+        <a
+          href="https://protonmail.com/"
+          target="blank"
+          class="list__link"
+          >Protonmail</a
+        >
+      </div>
+    </div>
+
+    <!-- Scrips  -->
+
+    <script src="js/time.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/weather.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+
+  <!-- Coded and designed by Miguel R. Ávila: https://github.com/MiguelRAvila -->
+</html>
